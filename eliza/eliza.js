@@ -15,3 +15,10 @@ function sendMessage() {
     document.getElementById('user-input').value = "";
 }
 
+// Function to display a message in the chat history
+function displayMessage(sender, message) {
+    const chatHistory = document.getElementById('chat-history');
+    const messageElement = document.createElement('p');
+    
+}
+
