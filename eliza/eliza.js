@@ -19,6 +19,8 @@ function sendMessage() {
 function displayMessage(sender, message) {
     const chatHistory = document.getElementById('chat-history');
     const messageElement = document.createElement('p');
-    
+    messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+    chatHistory.appendChild(messageElement);
+    chatHistory.scrollTop = chatHistory.scrollHeight; // Auto-scroll to the bottom
 }
 
