@@ -34,5 +34,13 @@ function getElizaResponse(input) {
         { pattern: /\bthank(s| you)\b/i, response: "You're welcome! I'm here to help." }
     ];
 
-   
+    // Check if any pattern matches the user input
+    for (let i = 0; i < responses.length; i++) {
+        if (responses[i].pattern.test(input)) {
+            return responses[i].response;
+        }
+    }
+
+    // Default response if no pattern matched
+    return "Tell me more about that.";
 }
