@@ -24,3 +24,15 @@ function displayMessage(sender, message) {
     chatHistory.scrollTop = chatHistory.scrollHeight; // Auto-scroll to the bottom
 }
 
+// Basic ELIZA logic to return a simple response
+function getElizaResponse(input) {
+    // Very simple responses based on keywords; can be expanded
+    const responses = [
+        { pattern: /\bhello\b/i, response: "Hello! How can I help you today?" },
+        { pattern: /\b(i need|help|advice)\b/i, response: "I'm here to listen. Please tell me more." },
+        { pattern: /\b(sad|depressed|unhappy)\b/i, response: "I'm sorry to hear that. What's making you feel this way?" },
+        { pattern: /\bthank(s| you)\b/i, response: "You're welcome! I'm here to help." }
+    ];
+
+   
+}
