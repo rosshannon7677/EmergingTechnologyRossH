@@ -3,58 +3,99 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Center the chat container */
+/* Body styling */
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f9;
+    background: #f0f4f8;
+    color: #333;
 }
 
-/* Chat container styling */
+/* Chat container */
 .chat-container {
     width: 90%;
-    max-width: 400px;
-    background-color: #fff;
+    max-width: 500px;
+    background: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
-/* Chat history area styling */
+/* Header styling */
+.header {
+    background: #007bff;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Chat history styling */
 .chat-history {
-    height: 300px;
+    height: 400px;
     overflow-y: auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+/* Message bubbles */
+.message {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.message.user {
+    background-color: #e1f5fe;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.message.eliza {
+    background-color: #f1f1f1;
+    align-self: flex-start;
     text-align: left;
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    padding: 15px;
+    background: #fff;
 }
 
 /* User input styling */
 #user-input {
-    width: calc(100% - 70px);
-    padding: 8px;
-    margin-right: 10px;
+    flex: 1;
+    padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 1rem;
 }
 
 /* Send button styling */
 button {
-    padding: 8px 16px;
+    padding: 10px 20px;
     border: none;
     background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
 }
+
 button:hover {
     background-color: #0056b3;
 }
