@@ -1,0 +1,4 @@
+requests==2.32.3
+ipykernel==6.29.5
+ipython==8.28.0
+pymongo==4.6.2  
