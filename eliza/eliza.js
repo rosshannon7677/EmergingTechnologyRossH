@@ -99,6 +99,14 @@ function getElizaResponse(input) {
         return "I'm sorry you're feeling this way. Can you share more about what's troubling you?";
     } 
 
+    // Loop through response patterns if sentiment is neutral
+    for (let i = 0; i < responsePatterns.length; i++) {
+        const { pattern, responses } = responsePatterns[i];
+        if (pattern.test(input)) {
+            const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+            return randomResponse.replace("your", "your").replace(/(i feel|i am|i think)\b/i, reflect(input));
+        }
+    }
 
     // Default fallback response if no patterns match and sentiment is neutral
     return "I'm here to listen. Tell me more.";
