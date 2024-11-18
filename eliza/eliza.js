@@ -30,6 +30,7 @@ function displayMessage(sender, message) {
 
 // Keywords for basic sentiment detection
 const positiveWords = ["happy", "good", "excited", "great", "love", "amazing", "fantastic", "joy"];
+const negativeWords = ["sad", "bad", "angry", "depressed", "upset", "lonely", "frustrated", "hate"];
 
 // Function to detect sentiment based on keywords
 function detectSentiment(input) {
@@ -39,6 +40,11 @@ function detectSentiment(input) {
     // Check for positive words
     if (positiveWords.some(word => input.includes(word))) {
         return "positive";
+    }
+
+    // Check for negative words
+    if (negativeWords.some(word => input.includes(word))) {
+        return "negative";
     }
 
     // Default to neutral if no sentiment keywords are found
@@ -80,3 +86,20 @@ const responsePatterns = [
     { pattern: /\b(yes|no)\b/i, responses: ["Why do you feel that way?", "Can you explain more?", "What makes you say that?"] },
     { pattern: /\b(thank you|thanks)\b/i, responses: ["You're welcome! Is there anything else on your mind?", "Glad to help! What's next?", "I'm here for you. Anything else?"] }
 ];
+
+// Function to get ELIZA's response based on user input
+function getElizaResponse(input) {
+    // Detect the sentiment of the user's input
+    const sentiment = detectSentiment(input);
+
+    // Respond based on sentiment
+    if (sentiment === "positive") {
+        return "I'm glad to hear that! Tell me more about it.";
+    } else if (sentiment === "negative") {
+        return "I'm sorry you're feeling this way. Can you share more about what's troubling you?";
+    } 
+
+
+    // Default fallback response if no patterns match and sentiment is neutral
+    return "I'm here to listen. Tell me more.";
+}
