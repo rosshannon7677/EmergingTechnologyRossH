@@ -9,9 +9,21 @@ function sendMessage() {
     // Generate ELIZA's response based on the user's input
     const elizaResponse = getElizaResponse(userInput);
     // Display ELIZA's response in the chat history
-    displayMessage("ELIZA", elizaResponse);
+    displayMessage("ELIZA", "Typing...");
     // Clear the input field for the next message
     document.getElementById('user-input').value = "";
+
+    // Generate ELIZA's response after a 2-second delay
+    setTimeout(() => {
+        // Remove "Typing..." message
+        removeLastMessage();
+
+        // Generate ELIZA's response based on the user's input
+        const elizaResponse = getElizaResponse(userInput);
+
+        // Display ELIZA's response in the chat history
+        displayMessage("ELIZA", elizaResponse);
+    }, 2000); // 2-second delay
 }
 
 // Function to display a message in the chat history
@@ -22,10 +34,20 @@ function displayMessage(sender, message) {
     const messageElement = document.createElement('p');
     // Format the message with the sender's name in bold and the message text
     messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+    messageElement.setAttribute("data-sender", sender);
     // Add the message to the chat history
     chatHistory.appendChild(messageElement);
     // Scroll the chat history to the bottom to show the latest message
     chatHistory.scrollTop = chatHistory.scrollHeight;
+}
+
+// Function to remove the last message (used for "Typing...")
+function removeLastMessage() {
+    const chatHistory = document.getElementById('chat-history');
+    const lastMessage = chatHistory.lastChild;
+    if (lastMessage && lastMessage.getAttribute("data-sender") === "ELIZA" && lastMessage.innerHTML.includes("Typing...")) {
+        chatHistory.removeChild(lastMessage);
+    }
 }
 
 // Keywords for basic sentiment detection
@@ -112,10 +134,10 @@ const responsePatterns = [
     { pattern: /\b(thank you|thanks|i appreciate)\b/i, 
       responses: ["You're welcome! Is there anything else you'd like to talk about?", "I'm glad I could help. What's on your mind now?", "No problem! Feel free to share more."] },
 
-    // Asking about ELIZA
-    { pattern: /\b(who are you|what are you|are you real)\b/i, 
-      responses: ["I'm ELIZA, your virtual assistant. How can I help you today?", "I'm here to listen and help. What's on your mind?", "Think of me as a friendly listener. What's bothering you?"] },
-
+    {
+      pattern: /\b(who are you|what are you|are you real|what is your purpose|what do you do)\b/i,
+      responses: ["I'm ELIZA, your virtual assistant. How can I help you today?", "I'm here to listen and assist. Feel free to share anything."]},
+    
     // Generic yes/no responses
     { pattern: /\b(yes|yeah|yep|no|nah)\b/i, 
       responses: ["Why do you feel that way?", "Can you explain more?", "What makes you say that?"] },
