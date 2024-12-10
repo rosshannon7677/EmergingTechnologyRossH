@@ -6,7 +6,7 @@ function sendMessage() {
     if (userInput === "") return;
     // Display the user's message in the chat history
     displayMessage("User", userInput);
-    // Generate ELIZA's response based on the user's input
+    // Generate ELIZA's response based on the user input
     const elizaResponse = getElizaResponse(userInput);
     // Display ELIZA's response in the chat history
     displayMessage("ELIZA", "Typing...");
