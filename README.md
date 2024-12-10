@@ -78,22 +78,23 @@ The ELIZA chatbot simulates a therapist interacting with users. This implementat
 
 ---
 
-### **References**:
+### **References**
 
-T1: Buidling a Trigram Model
+| Task | Description                                    | Link                                                                                     |
+|------|------------------------------------------------|------------------------------------------------------------------------------------------|
+| **T1** | **Building a Trigram Model**                  |                                                                                          |
+|      | Understanding what are N-Grams                 | [Understanding N-Grams - Towards Data Science](https://towardsdatascience.com/understanding-word-n-grams-and-n-gram-probability-in-natural-language-processing-9d9eef0fa058) |
+|      | How to Build Trigram Models                    | [GeeksforGeeks - N-Grams](https://www.geeksforgeeks.org/n-gram-language-modelling-with-nltk/) |
+| **T2** | **Generating Text Using the Trigram Model**    |                                                                                          |
+|      | Random choices selection: Generate pseudo-random numbers | [Python Random Module Documentation](https://docs.python.org/3/library/random.html#random.choices) |
+|      | Text Generation Using N-Grams                 | [Medium - Text Generation Using N-Grams](https://medium.com/@vsagziyaglitext-generation-using-n-grams-ef49e6e43d39) |
+| **T3** | **Analyzing the Generated Text for Valid Words** |                                                                                          |
+|      | Using Python to Compare Text                  | [Real Python - Working with Text Files](https://realpython.com/working-with-files-in-python/) |
+|      | Tokenization and Valid Words                  | [NLTK Tokenization and Word Analysis](https://neptune.ai/blog/tokenization-in-nlp)       |
+| **T4** | **Exporting the Model as JSON**               |                                                                                          |
+|      | Saving a dictionary to a JSON file in Python  | [Stack Overflow - JSON Serialization](https://stackoverflow.com/questions/12309269/saving-dictionary-to-a-json-file-in-python) |
+|      | Python JSON Module Documentation              | [Official Python JSON Documentation](https://docs.python.org/3/library/json.html)        |
 
-Understanding what are N-Grams: https://towardsdatascience.com/understanding-word-n-grams-and-n-gram-probability-in-natural-language-processing-9d9eef0fa058
-
-T2: Generating Text Using the Trigram Model
-
-Random choices selection: Generate pseudo-random numbers https://docs.python.org/3/library/random.html#random.choices
-
-T3: Analyzing the Generated Text for Valid Words
-
-
-T4: Exporting the Model as JSON
-
-Saving a dictionary to a JSON file in Python https://stackoverflow.com/questions/12309269/saving-dictionary-to-a-json-file-in-python
 
 
 ## **Getting Started**
