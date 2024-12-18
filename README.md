@@ -94,7 +94,9 @@ The ELIZA chatbot simulates a therapist interacting with users. This implementat
 | **T4** | **Exporting the Model as JSON**               |                                                                                          |
 |      | Saving a dictionary to a JSON file in Python  | [Stack Overflow - JSON Serialization](https://stackoverflow.com/questions/12309269/saving-dictionary-to-a-json-file-in-python) |
 |      | Python JSON Module Documentation              | [Official Python JSON Documentation](https://docs.python.org/3/library/json.html)        |
-
+| **T5** | **ELIZA Chatbot Implementation**              |                                                                                          |
+|      | Original ELIZA Implementation and History     | [NJIT - ELIZA Documentation](https://web.njit.edu/~ronkowit/eliza.html)                |
+|      | Modern ELIZA Research and Applications        | [arXiv - ELIZA Studies](https://arxiv.org/abs/2406.17650)                              |
 
 
 ## **Getting Started**
