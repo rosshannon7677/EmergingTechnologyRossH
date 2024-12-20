@@ -60,6 +60,13 @@ This project aims to demonstrate foundational techniques in text analysis and ba
 ## **ELIZA Chatbot Project**
 ## Link to Chatbot: https://rosshannon7677.github.io/EmergingTechnologyRossH/eliza/
 
+### **History of ELIZA Chatbot**
+ELIZA was one of the first computer programs designed to process natural language, allowing it to engage in conversations with humans. Developed by Joseph Weizenbaum in 1966, ELIZA was not intended to understand conversations genuinely. Instead, it was designed to mimic a human-like conversation using simple pattern matching and substitution rules to generate responses. Despite its simplicity, ELIZA captured the imagination of users and set the stage for future AI development.
+
+### **How ELIZA Works**
+ELIZA is a straightforward system which uses pattern matching for responses. It uses predefined scripts with the first one being the "DOCTOR" script. This script was made to be therapist who helps patients to talk about their feelings by giving them back a 
+helpful response.
+
 ### **Project Description**  
 The ELIZA chatbot simulates a therapist interacting with users. This implementation includes:
 - **Pattern matching** for generating responses.
@@ -90,14 +97,19 @@ The ELIZA chatbot simulates a therapist interacting with users. This implementat
 |      | Text Generation Using N-Grams                 | [Medium - Text Generation Using N-Grams](https://medium.com/@vsagziyaglitext-generation-using-n-grams-ef49e6e43d39) |
 | **T3** | **Analyzing the Generated Text for Valid Words** |                                                                                          |
 |      | Using Python to Compare Text                  | [Real Python - Working with Text Files](https://realpython.com/working-with-files-in-python/) |
+|      | Python File I/O Operations                    | [Python Documentation - Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) |
 |      | Tokenization and Valid Words                  | [NLTK Tokenization and Word Analysis](https://neptune.ai/blog/tokenization-in-nlp)       |
-| **T4** | **Exporting the Model as JSON**               |                                                                                          |
-|      | Saving a dictionary to a JSON file in Python  | [Stack Overflow - JSON Serialization](https://stackoverflow.com/questions/12309269/saving-dictionary-to-a-json-file-in-python) |
-|      | Python JSON Module Documentation              | [Official Python JSON Documentation](https://docs.python.org/3/library/json.html)        |
-| **T5** | **ELIZA Chatbot Implementation**              |                                                                                          |
+
+### **ELIZA Chatbot References**
 |      | Original ELIZA Implementation and History     | [NJIT - ELIZA Documentation](https://web.njit.edu/~ronkowit/eliza.html)                |
 |      | Modern ELIZA Research and Applications        | [arXiv - ELIZA Studies](https://arxiv.org/abs/2406.17650)                              |
+|      | Natural Language Processing with NLTK         | [NLTK Documentation](https://www.nltk.org/)                                             |
 
+### **AI Used**
+| Tool | Purpose | Link |
+|------|----------|------|
+| GitHub Copilot | Used for code, pattern matching, and Python suggestions  | [GitHub Copilot](https://github.com/features/copilot) |
+| ChatGPT | Helped with code structure, debugging, and enhancing conversation patterns | [ChatGPT](https://openai.com/chatgpt) |
 
 ## **Getting Started**
 
