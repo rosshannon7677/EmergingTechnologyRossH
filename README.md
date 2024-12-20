@@ -99,6 +99,9 @@ The ELIZA chatbot simulates a therapist interacting with users. This implementat
 |      | Using Python to Compare Text                  | [Real Python - Working with Text Files](https://realpython.com/working-with-files-in-python/) |
 |      | Python File I/O Operations                    | [Python Documentation - Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) |
 |      | Tokenization and Valid Words                  | [NLTK Tokenization and Word Analysis](https://neptune.ai/blog/tokenization-in-nlp)       |
+| **T4** | **Exporting the Model as JSON**               |                                                                                          |
+|      | Saving a dictionary to a JSON file in Python  | [Stack Overflow - JSON Serialization](https://stackoverflow.com/questions/12309269/saving-dictionary-to-a-json-file-in-python) |
+|      | Python JSON Module Documentation              | [Official Python JSON Documentation](https://docs.python.org/3/library/json.html)        |
 
 ### **ELIZA Chatbot References**
 
