@@ -101,9 +101,12 @@ The ELIZA chatbot simulates a therapist interacting with users. This implementat
 |      | Tokenization and Valid Words                  | [NLTK Tokenization and Word Analysis](https://neptune.ai/blog/tokenization-in-nlp)       |
 
 ### **ELIZA Chatbot References**
-|      | Original ELIZA Implementation and History     | [NJIT - ELIZA Documentation](https://web.njit.edu/~ronkowit/eliza.html)                |
-|      | Modern ELIZA Research and Applications        | [arXiv - ELIZA Studies](https://arxiv.org/abs/2406.17650)                              |
-|      | Natural Language Processing with NLTK         | [NLTK Documentation](https://www.nltk.org/)                                             |
+
+| Description                                    | Link                                                                                     |
+|------------------------------------------------|------------------------------------------------------------------------------------------|
+| Original ELIZA Implementation and History      | [NJIT - ELIZA Documentation](https://web.njit.edu/~ronkowit/eliza.html)                  |
+| Modern ELIZA Research and Applications         | [arXiv - ELIZA Studies](https://arxiv.org/abs/2406.17650)                                |
+| Natural Language Processing with NLTK          | [NLTK Documentation](https://www.nltk.org/)                                              |
 
 ### **AI Used**
 | Tool | Purpose | Link |
