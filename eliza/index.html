@@ -10,28 +10,21 @@
     <div class="main-container">
         <!-- Header Section -->
         <header class="header">
-            <h1>Welcome to ELIZA Chatbot</h1>
-            <p>Your friendly virtual assistant here to listen and assist.</p>
+            <h1>ELIZA Chatbot</h1>
         </header>
         
         <!-- Chat Interface -->
-        <div class="chat-container">
-            <!-- Chat History -->
-            <div id="chat-history" class="chat-history">
+        <div id="chat-container">
+            <div id="chat-history" class="chat">
                 <!-- Chat messages will appear here -->
             </div>
             
             <!-- Input Section -->
-            <div class="input-container">
-                <input type="text" id="user-input" placeholder="Type your message here..." autofocus>
+            <div id="input-container">
+                <textarea id="user-input" placeholder="Type your message here..." autofocus></textarea>
                 <button class="send-button" onclick="sendMessage()">Send</button>
             </div>
         </div>
-        
-        <!-- Footer Section -->
-        <footer class="footer">
-            <p>© 2024 ELIZA Chatbot | Made with ❤️ by Ross Hannon</p>
-        </footer>
     </div>
     
     <script src="eliza.js"></script>
