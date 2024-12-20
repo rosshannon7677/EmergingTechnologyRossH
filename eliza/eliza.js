@@ -28,16 +28,15 @@ function sendMessage() {
 
 // Function to display a message in the chat history
 function displayMessage(sender, message) {
-    // Find the chat history element where messages are displayed
     const chatHistory = document.getElementById('chat-history');
-    // Create a new paragraph element for the message
     const messageElement = document.createElement('p');
-    // Format the message with the sender's name in bold and the message text
-    messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+    messageElement.textContent = message;
     messageElement.setAttribute("data-sender", sender);
-    // Add the message to the chat history
+    
+    // Add to chat history
     chatHistory.appendChild(messageElement);
-    // Scroll the chat history to the bottom to show the latest message
+    
+    // Auto-scroll to bottom
     chatHistory.scrollTop = chatHistory.scrollHeight;
 }
 
